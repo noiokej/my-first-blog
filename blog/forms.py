@@ -1,7 +1,9 @@
 # importujemy formularze django
 from django import forms
 # importujemy nasz model Post
-from .models import Post
+from .models import Post, Comment
+
+
 
 
 # PostForm to nazwa naszego formularza
@@ -12,7 +14,19 @@ class PostForm(forms.ModelForm):
         # informujemy jaki model powinien byc wykorzystany do stworzenia tego formularza
         model = Post
         # i ktore pola powinny pojawic sie w formularzu
-        fields = ('title', 'text',)
+        fields = ('title', 'text', 'author',)
+
+
+class CommentForm(forms.ModelForm):
+
+    class Meta:
+        # informujemy jaki model powinien byc wykorzystany do stworzenia tego formularza
+        model = Comment
+        # i ktore pola powinny pojawic sie w formularzu
+        fields = ('post', 'text',)
+
+
+
 
 # pozniej uzyc ten formularz wewnatrz views.py, i wyswietlic w templates
 # trzeba stworzyc: link do strony(post/new, 'post_new'), adres url, widok, szablon

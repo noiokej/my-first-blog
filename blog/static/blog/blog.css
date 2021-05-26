@@ -1,24 +1,44 @@
 body
 {
-    background-color: #4e5052 !important;
+    background-color: #4e5052;
 
 }
 .page-header {
     background-color: #003153;
     margin: 0px;
-    padding: 20px 20px 20px 40px;
     border-bottom: 0px;
+    text-align: center;
 }
+
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .content {
     margin-left: 20px;
     background-color: #4e5052;
+    display: inline-block;
+    width: 100%;
+
+}
+.row
+{
+    display: inline-block;
+
+}
+.navbar
+{
+    padding: 0px;
+    color: #ffffff;
+
 }
 
 h1, h2, h3, h4 {
@@ -32,13 +52,12 @@ h1, h2, h3, h4 {
 }
 .poscik
 {
-
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 .save {
-    float: right;
+    float: left;
 }
 
 .post-form textarea, .post-form input {
@@ -47,13 +66,13 @@ h1, h2, h3, h4 {
 
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
-    float: right;
+    float: center;
     font-size: 26pt;
-    margin-right: 20px;
+    display: inline-block;
 }
 
 .post {
-    margin-top: 70px;
+    margin-top: 50px;
     color: #c4c4c4;
     background-color: #656565;
     padding: 10px;
@@ -71,4 +90,44 @@ h1, h2, h3, h4 {
 p
 {
     text-align: justify;
+}
+
+a.nav-link
+{
+    color: white !important;
+
+}
+
+.right-nav
+{
+    max-width: 25%;
+    float: right;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.nav-link:hover
+{
+    color: #777777 !important;
+}
+
+.comments
+{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #656565;
+    margin-top: 70px;
+}
+.comment
+{
+    border-radius: 15px;
+    background-color: grey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer
+{
+    padding: 50px;
+    background-color: black;
 }
