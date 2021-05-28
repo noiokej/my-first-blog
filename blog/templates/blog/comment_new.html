@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>New comment xd</h2>
+    {% for comment in comments %}
+        <h2>{{ comment.text }}xd</h2>
+    {% endfor %}
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        {{ comments }}
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

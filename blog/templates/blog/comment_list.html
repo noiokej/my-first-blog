@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment list</title>
+
+</head>
+<body>
+
+    <div class="articles">
+        {% for comment in comments %}
+            <div class="article">
+                <h2><a href="#"> {{ comment.text }} </a> </h2>
+            </div>
+        {% endfor %}
+
+
+    </div>
+
+</body>
+</html>

@@ -1,29 +1,62 @@
-.page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+body
+{
+    background-color: #463476;
+
 }
+.page-header {
+    background-color: #463476;
+    margin: 0px;
+    border-bottom: 0px;
+    text-align: center;
+}
+
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .content {
-    margin-left: 40px;
+
+    background-color: #21262d;
+    width: 100%;
+
+}
+content container
+}
+.navbar
+{
+    padding: 0px;
+    color: #ffffff;
+
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Nunito', sans-serif;
+    color: #c4c4c4;
 }
 
 .date {
     color: #828282;
+    width: 50%;
+    margin: 0px;
+    font-size: 12px;
+}
+.poscik
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #664bab;
 }
 
 .save {
-    float: right;
+    float: left;
 }
 
 .post-form textarea, .post-form input {
@@ -32,20 +65,107 @@ h1, h2, h3, h4 {
 
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
-    float: right;
+    float: center;
     font-size: 26pt;
-    margin-right: 20px;
+    display: inline-block;
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-top: 50px;
+    color: #c4c4c4;
+    background-color: #30363d;
+    padding: 10px;
+    border: 3px solid #3c2c64 !important;
+    border-radius: 10px;
 }
 
 .post h2 a, .post h1 a:visited {
-    color: #000000;
+    color: #664bab;
 }
 
 .pencil
 {
     float: right;
 }
+
+p
+{
+    text-align: justify;
+}
+
+a.nav-link
+{
+    color: white !important;
+
+}
+
+.content-section
+{
+    background-color: #30363d;
+    border: 3px solid #3c2c64;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin-bottom: -1px;
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+
+}
+a.list-group-item
+{
+    margin-bottom: 0px;
+    background-color: #463476;
+    border: 1px solid #3c2c64;
+    color: #c4c4c4;
+
+
+}
+h3
+{
+    color: #664bab;
+}
+.nav-link:hover
+{
+    color: #777777 !important;
+}
+
+.comments
+{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #463476;
+    margin-top: 70px;
+}
+.comment
+{
+    border-radius: 10px;
+    background-color: #30363d;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #c4c4c4;
+}
+
+button.btn
+{
+    border: 2px solid #463476;
+    color: #664bab ;
+
+}
+button.btn:hover
+{
+    color: #826bbe;
+    background-color: #463476;
+    border: 1px solid #463476;
+
+}
+
+.post-form
+{
+
+}
+footer
+{
+    padding: 50px;
+    background-color: #212529;
+}
+
