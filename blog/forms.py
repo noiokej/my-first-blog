@@ -2,6 +2,7 @@
 from django import forms
 # importujemy nasz model Post
 from .models import Post, Comment
+from django.db import models
 
 
 

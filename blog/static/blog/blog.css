@@ -1,10 +1,10 @@
 body
 {
-    background-color: #4e5052;
+    background-color: #463476;
 
 }
 .page-header {
-    background-color: #003153;
+    background-color: #463476;
     margin: 0px;
     border-bottom: 0px;
     text-align: center;
@@ -23,16 +23,12 @@ body
 }
 
 .content {
-    margin-left: 20px;
-    background-color: #4e5052;
-    display: inline-block;
+
+    background-color: #21262d;
     width: 100%;
 
 }
-.row
-{
-    display: inline-block;
-
+content container
 }
 .navbar
 {
@@ -43,17 +39,20 @@ body
 
 h1, h2, h3, h4 {
     font-family: 'Nunito', sans-serif;
+    color: #c4c4c4;
 }
 
 .date {
     color: #828282;
     width: 50%;
     margin: 0px;
+    font-size: 12px;
 }
 .poscik
 {
     margin-top: 10px;
     margin-bottom: 5px;
+    color: #664bab;
 }
 
 .save {
@@ -74,12 +73,14 @@ h1, h2, h3, h4 {
 .post {
     margin-top: 50px;
     color: #c4c4c4;
-    background-color: #656565;
+    background-color: #30363d;
     padding: 10px;
+    border: 3px solid #3c2c64 !important;
+    border-radius: 10px;
 }
 
 .post h2 a, .post h1 a:visited {
-    color: ##003153;
+    color: #664bab;
 }
 
 .pencil
@@ -98,14 +99,31 @@ a.nav-link
 
 }
 
-.right-nav
+.content-section
 {
-    max-width: 25%;
-    float: right;
-    padding: 10px;
-    margin-top: 40px;
-}
+    background-color: #30363d;
+    border: 3px solid #3c2c64;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin-bottom: -1px;
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
 
+}
+a.list-group-item
+{
+    margin-bottom: 0px;
+    background-color: #463476;
+    border: 1px solid #3c2c64;
+    color: #c4c4c4;
+
+
+}
+h3
+{
+    color: #664bab;
+}
 .nav-link:hover
 {
     color: #777777 !important;
@@ -114,20 +132,40 @@ a.nav-link
 .comments
 {
     padding: 20px;
-    border-radius: 15px;
-    background-color: #656565;
+    border-radius: 10px;
+    background-color: #463476;
     margin-top: 70px;
 }
 .comment
 {
-    border-radius: 15px;
-    background-color: grey;
+    border-radius: 10px;
+    background-color: #30363d;
     padding: 10px;
     margin-bottom: 10px;
+    color: #c4c4c4;
 }
 
+button.btn
+{
+    border: 2px solid #463476;
+    color: #664bab ;
+
+}
+button.btn:hover
+{
+    color: #826bbe;
+    background-color: #463476;
+    border: 1px solid #463476;
+
+}
+
+.post-form
+{
+
+}
 footer
 {
     padding: 50px;
-    background-color: black;
+    background-color: #212529;
 }
+

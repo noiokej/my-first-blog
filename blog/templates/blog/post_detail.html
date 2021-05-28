@@ -25,9 +25,11 @@
 
         {% for comment in comments %}
             <div class="comment">
-            <h3>bedzie autor</h3>
-            {{comment.published_date}}
-            <p>{{comment.text}}</p>
+                <div class="date">
+                     {{comment.published_date}}
+                </div>
+                <h3>bedzie autor</h3>
+                <p>{{comment.text}}</p>
             </div>
         {% endfor %}
 
