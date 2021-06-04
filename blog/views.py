@@ -62,6 +62,8 @@ def comment_new(request, pk):
 
     return render(request, 'blog/comment_new.html', {'form': form})
 
+def callendar(request):
+    return render(request, 'blog/about.html', {'title': 'About'})
 
 #def comment_list(request):
   #  comments = Comment.objects.all().order_by('published_date')

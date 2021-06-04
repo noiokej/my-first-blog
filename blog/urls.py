@@ -10,6 +10,7 @@ urlpatterns = [
     path('post/new', views.post_new, name='post_new'),
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('post/<int:pk>/comment/new/', views.comment_new, name='comment_new'),
+    path('about/', views.callendar, name='callendar')
     #path('post/<int:pk>/', views.comment_list, name='comment_list'),
     #path('post/comment_list/', views.comment_list, name='comment_list')
 

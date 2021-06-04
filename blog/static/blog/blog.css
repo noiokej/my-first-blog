@@ -28,8 +28,22 @@ body
     width: 100%;
 
 }
-content container
+div#navbarNav.collapse.navbar-collapse
+{
+
+    flex-grow: 1;
+    display: inherit !important;
+
+
 }
+
+div#d-flex.justify-content-between
+{
+    flex-basis: 0;
+    margin-right: 10px;
+    background-color: red;
+}
+
 .navbar
 {
     padding: 0px;
@@ -168,4 +182,13 @@ footer
     padding: 50px;
     background-color: #212529;
 }
+navbarNav
+{
+    width: 200px;
 
+}
+
+#form.form-inline:
+{
+    flex-basis: 0;
+}
