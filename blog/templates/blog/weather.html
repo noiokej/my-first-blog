@@ -1,0 +1,37 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="pogoda">
+    <h1 class="prognoza-tytul">PROGNOZA POGODY</h1>
+    <br>
+
+    <form action="" method="post">{% csrf_token %}
+        <label for="miasto">Wpisz miasto: </label>
+        <input id="miasto" type="text" name="miasto" value="{{ city_name }}" style="color: black;">
+        <input type="submit" value="OK" style="color: black;">
+    </form>
+    <br><br>
+    {% if weather.city %}
+        <div class="prognoza">
+            <div class="city-name">
+                {{ weather.city }}
+                <div class="image">
+                    <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png">
+                </div>
+                <div style="">{{ weather.temperature }}°C</div>
+                <br>
+
+            </div>
+            <div class="weather-items">
+
+                <p class="weather-item" style="margin-bottom: 0px;">Wiatr: {{ weather.wind }}km/h</p>
+                <p class="weather-item">Kierunek wiatru: <i style="transform: rotate({{ weather.direction }}deg)" class="icon-direction"></i></p>
+                <!--<img src="{% static 'blog/images/directions.png' %}" width="150" height="150">-->
+                <p class="weather-item">Wilgotność: {{ weather.humidity }}%</p>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}

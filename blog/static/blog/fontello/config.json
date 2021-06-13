@@ -1,0 +1,64 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1145676a91138011729fa2909997af66",
+      "css": "linkedin-squared",
+      "code": 62220,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "cf62866c0cfe3dd14455b381c724f8e1",
+      "css": "soccer-ball",
+      "code": 61923,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ivmsk67zo1yb1tthd3ugi4xnb3get418",
+      "css": "sun",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "2b8e9b027181aafd210bf29c5486d4a0",
+      "css": "up-circled",
+      "code": 61610,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "921e3974e54ff9e8b7cd906a3dc74636",
+      "css": "direction",
+      "code": 61732,
+      "src": "fontawesome"
+    }
+  ]
+}

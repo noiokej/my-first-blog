@@ -1,6 +1,7 @@
 body
 {
     background-color: #463476;
+    color: #c4c4c4;
 
 }
 .page-header {
@@ -33,6 +34,7 @@ div#navbarNav.collapse.navbar-collapse
 
     flex-grow: 1;
     display: inherit !important;
+    color: red;
 
 
 }
@@ -121,9 +123,10 @@ a.nav-link
     padding: 10px 0px;
     margin-bottom: -1px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 10px;
+    margin-right: 20px;
     text-align: center;
-
+    min-width: 280px;
 }
 a.list-group-item
 {
@@ -162,7 +165,7 @@ h3
 button.btn
 {
     border: 2px solid #463476;
-    color: #664bab ;
+    color: #664bab;
 
 }
 button.btn:hover
@@ -174,12 +177,89 @@ button.btn:hover
 }
 
 .post-form
+{}
+
+.socials
 {
+    max-width: 160px;
+    margin: auto;
+
+}
+#top
+{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 130px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    font-size: 55px;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.pogoda
+{
+    padding: 20px 10px 200px 10px;
+    margin_bottom: 50px;
+
+}
+
+.prognoza
+{
+    text-align: center;
+    box-sizing: content-box !important;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #d9c95b;
+    border-radius: 20px;
+    background-color: #463476;
+}
+
+.city-name
+{
+    font-size: 30px;
+    text-align: center !important;
+
+}
+
+.prognoza-tytul
+{
+    text-align: center;
+    box-sizing: content-box !important;
+    color: #d9c95b !important;
+}
+
+.weather-items
+{
+    text-align: left;
+    margin-left: 30px;
+
+}
+.weather-item
+{
+
+    box-sizing: content-box;
+
+}
+.image
+{
+    box-sizing: content-box;
+
+}
+.icon-direction
+{
+    display: inline-block;
 
 }
 footer
 {
-    padding: 50px;
+    padding: 30px;
     background-color: #212529;
 }
 navbarNav

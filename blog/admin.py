@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, City
 # Register your models here.
 
 
@@ -15,3 +15,8 @@ class PostAdmin(admin.ModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('id', '__str__', 'post', 'published_date')
+
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ('name', '__str__')
