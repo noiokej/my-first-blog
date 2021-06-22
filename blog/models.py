@@ -28,8 +28,8 @@ class Comment(models.Model):
     class Meta:
         verbose_name_plural = "Comments"
 
-def __str__(self):
-    return self.text[:50] + "..."
+    def __str__(self):
+      return self.text[:50] + "..."
 
 
 class City(models.Model):
@@ -40,3 +40,13 @@ class City(models.Model):
 
     class Meta:
         verbose_name_plural = 'cities'
+
+
+class Event(models.Model):
+    name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'events'

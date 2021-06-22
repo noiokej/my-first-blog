@@ -257,6 +257,25 @@ button.btn:hover
     display: inline-block;
 
 }
+
+.event
+{
+    font-size: 17px !important;
+    padding: 4px;
+}
+.tab-content
+{
+    padding: 10px 0px;
+    margin-bottom: 100px;
+}
+.brak-danych
+{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+
 footer
 {
     padding: 30px;

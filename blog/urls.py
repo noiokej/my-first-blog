@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views, api
+from . import views, api, apiFootball
 
 
 
@@ -11,7 +11,7 @@ urlpatterns = [
     path('post/new', views.post_new, name='post_new'),
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('post/<int:pk>/comment/new/', views.comment_new, name='comment_new'),
-    path('terminarz/', views.callendar, name='callendar'),
+    path('terminarz/', apiFootball.Event, name='callendar'),
     path('weather/', api.weather, name='weather'),
     #path('post/<int:pk>/', views.comment_list, name='comment_list'),
     #path('post/comment_list/', views.comment_list, name='comment_list')

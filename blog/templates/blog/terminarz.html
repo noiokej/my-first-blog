@@ -1,9 +1,114 @@
 {% extends 'blog/base.html' %}
-
+{% load static %}
 {% block content %}
 
 <h1>KALENDARZ MECZOWY</h1>
 
+<br>
+
+<p onload="przypisanie()"></p>
+
+<!-- Zakładki -->
+<ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#zakladka1" style="background-color: #664bab" role="tab" data-toggle="tab">Dziś</a></li>
+    <li><a href="#zakladka2" role="tab" data-toggle="tab">Jutro</a></li>
+    <li><a href="#zakladka3" role="tab" data-toggle="tab">Pojutrze</a></li>
+</ul>
+
+<!-- Zawartość zakładek -->
+<div class="tab-content">
+    <div class="tab-pane active" id="zakladka1">
+    {% for i in ListaEventow %}
+        {% if i.day == 1 %}
+        <div class="event">
+            {{ i.time }}
+            {% if i.discipline == 'pilkanozna' %}
+                ⚽
+            {% elif i.discipline == 'siatkowka' %}
+                🏐
+            {% elif i.discipline == 'koszykowka' %}
+                🏀
+            {% elif i.discipline == 'magazyn' %}
+                📺
+            {% elif i.discipline == 'motor' %}
+                🏍️‍
+            {% elif i.discipline == 'hokej' %}
+                🏒‍
+            {% elif i.discipline == 'walki' %}
+                ‍🥊
+            {% elif i.discipline == 'tenis' %}
+                🥎
+            {% endif %}
+            {{ i.event }}
+            <br>
+          </div>
+      {% endif %}
+
+    {% endfor %}
+</div>
+    <div class="tab-pane" id="zakladka2">
+        {% for i in ListaEventow %}
+            {% if i.day == 2 %}
+            <div class="event">
+                {{ i.time }}
+                {% if i.discipline == 'pilkanozna' %}
+                    ⚽
+                {% elif i.discipline == 'siatkowka' %}
+                    🏐
+                {% elif i.discipline == 'koszykowka' %}
+                    🏀
+                {% elif i.discipline == 'magazyn' %}
+                    📺
+                {% elif i.discipline == 'motor' %}
+                    🏍️‍
+                {% elif i.discipline == 'hokej' %}
+                    🏒‍
+                {% elif i.discipline == 'walki' %}
+                    ‍🥊
+                {% elif i.discipline == 'tenis' %}
+                    🥎
+                {% endif %}
+                {{ i.event }}
+                <br>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="tab-pane" id="zakladka3">
+        {% for i in ListaEventow %}
+            {% if i.day == 3 %}
+            <div class="event">
+                {{ i.time }}
+                {% if i.discipline == 'pilkanozna' %}
+                    ⚽
+                {% elif i.discipline == 'siatkowka' %}
+                    🏐
+                {% elif i.discipline == 'koszykowka' %}
+                    🏀
+                {% elif i.discipline == 'magazyn' %}
+                    📺
+                {% elif i.discipline == 'motor' %}
+                    🏍️‍
+                {% elif i.discipline == 'hokej' %}
+                    🏒‍
+                {% elif i.discipline == 'walki' %}
+                    ‍🥊
+                {% elif i.discipline == 'tenis' %}
+                    🥎
+                {% endif %}
+                {{ i.event }}
+                <br>
+            </div>
+            {% endif %}
+        {% endfor %}
+        {% if "3" not in ListaEventow %}
+            <div class="brak-danych">
+                <h1> Brak danych na tę chwilę </h1>
+
+            </div>
+        {% endif %}
+    </div>
+</div>
 
 
 {% endblock %}
