@@ -31,12 +31,9 @@ body
 }
 div#navbarNav.collapse.navbar-collapse
 {
-
     flex-grow: 1;
     display: inherit !important;
     color: red;
-
-
 }
 
 div#d-flex.justify-content-between
@@ -121,8 +118,8 @@ a.nav-link
     border: 3px solid #3c2c64;
     border-radius: 10px;
     padding: 10px 0px;
-    margin-bottom: -1px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 20px;
     text-align: center;
@@ -134,16 +131,21 @@ a.list-group-item
     background-color: #463476;
     border: 1px solid #3c2c64;
     color: #c4c4c4;
-
-
 }
 h3
 {
     color: #664bab;
 }
-.nav-link:hover
-{
+.nav-link:hover {
     color: #777777 !important;
+    user-select: none;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #463476;
+    cursor: pointer;
+    display: block;
+    user-select: none;
 }
 
 .comments
@@ -202,16 +204,15 @@ button.btn:hover
 
 .pogoda
 {
-    padding: 20px 10px 200px 10px;
-    margin_bottom: 50px;
+    padding: 20px 10px 50px 10px;
+    margin_bottom: 10px;
 
 }
 
 .prognoza
 {
     text-align: center;
-    box-sizing: content-box !important;
-    width: 50%;
+    /*box-sizing: content-box !important;*/
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
@@ -237,15 +238,14 @@ button.btn:hover
 
 .weather-items
 {
-    text-align: left;
+    align-items: center;
     margin-left: 30px;
 
 }
 .weather-item
 {
-
-    box-sizing: content-box;
-
+    /*box-sizing: content-box;*/
+    align-items: center;
 }
 .image
 {
@@ -266,7 +266,8 @@ button.btn:hover
 .tab-content
 {
     padding: 10px 0px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    color: #fff;
 }
 .brak-danych
 {
@@ -281,13 +282,23 @@ footer
     padding: 30px;
     background-color: #212529;
 }
+i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 navbarNav
 {
     width: 200px;
 
 }
 
-#form.form-inline:
+#form.form-inline
 {
     flex-basis: 0;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }

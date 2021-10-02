@@ -13,22 +13,22 @@
     </form>
     <br><br>
     {% if weather.city %}
-        <div class="prognoza">
-            <div class="city-name">
-                {{ weather.city }}
-                <div class="image">
-                    <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png">
+        <div class="flex-column">
+            <div class="prognoza">
+                <div class="city-name">
+                    {{ weather.city }}
+                    <div class="image">
+                        <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png">
+                    </div>
+                    <div style="">{{ weather.temperature }}°C</div>
+                    <br>
                 </div>
-                <div style="">{{ weather.temperature }}°C</div>
-                <br>
-
-            </div>
-            <div class="weather-items">
-
-                <p class="weather-item" style="margin-bottom: 0px;">Wiatr: {{ weather.wind }} km/h</p>
-                <p class="weather-item">Kierunek wiatru: <i style="transform: rotate({{ weather.direction }}deg)" class="icon-direction"></i></p>
-                <!--<img src="{% static 'blog/images/directions.png' %}" width="150" height="150">-->
-                <p class="weather-item">Wilgotność: {{ weather.humidity }}%</p>
+                <div class="weather-items">
+                    <p class="weather-item" style="margin-bottom: 0px;">Wiatr: {{ weather.wind }} km/h</p>
+                    <p class="weather-item">Kierunek wiatru: <i style="transform: rotate({{ weather.direction }}deg)" class="icon-direction"></i></p>
+                    <!--<img src="{% static 'blog/images/directions.png' %}" width="150" height="150">-->
+                    <p class="weather-item">Wilgotność: {{ weather.humidity }}%</p>
+                </div>
             </div>
         </div>
     {% endif %}

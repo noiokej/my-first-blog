@@ -12,9 +12,15 @@ window.addEventListener("scroll", () => {
 mybutton = document.getElementById("top");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    mybutton.style.display = "none";}
+  else {
+  scrollFunction()};
+  }
 
 function scrollFunction() {
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "flex";
   } else {
@@ -25,9 +31,4 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-function przypisanie() {
-  alert('xDDDDDDDDDDDDD');
-
 }

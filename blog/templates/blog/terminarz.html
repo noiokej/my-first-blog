@@ -9,15 +9,24 @@
 <p onload="przypisanie()"></p>
 
 <!-- Zakładki -->
-<ul class="nav nav-pills" role="tablist">
-    <li class="active"><a href="#zakladka1" style="background-color: #664bab" role="tab" data-toggle="tab">Dziś</a></li>
-    <li><a href="#zakladka2" role="tab" data-toggle="tab">Jutro</a></li>
-    <li><a href="#zakladka3" role="tab" data-toggle="tab">Pojutrze</a></li>
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#zakladka1" type="button" role="tab" aria-controls="zakladka1" aria-selected="true">Dziś</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#zakladka2" type="button" role="tab" aria-controls="zakladka2" aria-selected="false">Jutro</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#zakladka3" type="button" role="tab" aria-controls="zakladka3" aria-selected="false">Pojutrze</a>
+  </li>
 </ul>
 
+
+
 <!-- Zawartość zakładek -->
-<div class="tab-content">
-    <div class="tab-pane active" id="zakladka1">
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane active" id="zakladka1" >
     {% for i in ListaEventow %}
         {% if i.day == 1 %}
         <div class="event">
@@ -75,7 +84,9 @@
         {% endfor %}
     </div>
     <div class="tab-pane" id="zakladka3">
+
         {% for i in ListaEventow %}
+
             {% if i.day == 3 %}
             <div class="event">
                 {{ i.time }}
@@ -96,15 +107,19 @@
                 {% elif i.discipline == 'tenis' %}
                     🥎
                 {% endif %}
+
                 {{ i.event }}
+
                 <br>
             </div>
             {% endif %}
         {% endfor %}
-        {% if "3" not in ListaEventow %}
+        {{ ListaEventow.1.day }}
+        {% if '3' in ListaEventow %}
             <div class="brak-danych">
                 <h1> Brak danych na tę chwilę </h1>
-
+                {{ ListaEventow }}
+                <br>
             </div>
         {% endif %}
     </div>
